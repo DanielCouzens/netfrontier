@@ -1,0 +1,36 @@
+.call-to-action {
+  @include button-one;
+  color: $white;
+  background-color: $mid-orange;
+  margin: 2rem 0;
+  transition: 300ms;
+  font-weight: 700;
+  border-radius: $border;
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 18px;
+    width: 10px;
+    transform: rotate(90deg);
+  }
+}
+
+.call-to-action:hover {
+  @include bx-shadow;
+  background-color: $dark-grey-blue;
+  color: $white;
+}
+
+.call-to-action-small {
+  @include button-small;
+  color: $dark-grey-blue;
+  background-color: $mid-orange;
+  margin: $t-size 0;
+}
+
+.call-to-action-small:hover {
+  @include bx-shadow;
+  background-color: $dark-grey-blue;
+  color: $white;
+}

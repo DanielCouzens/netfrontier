@@ -1,0 +1,100 @@
+.hero-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 80vh;
+  width: 100vw;
+
+  @media only screen and (max-width: $sz-s) {
+    min-height: 600px;
+    max-height: 600px;
+  }
+}
+
+.mission-statement {
+  z-index: 1000;
+  background-color: $light-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-statement h1 {
+  font-size: 6.5rem;
+  color: $dark-grey-blue;
+  padding: 0 $m-size;
+  z-index: 10000;
+
+  @media only screen and (max-width: $sz-xl) {
+    font-size: 5rem;
+  }
+
+  @media only screen and (max-width: $sz-s) {
+    max-width: 345px;
+    font-size: 3.5rem;
+  }
+}
+
+.sub-heading {
+  z-index: 10000;
+}
+
+.sub-heading h2 {
+  z-index: 10000;
+  margin-top: $l-size;
+  padding: 0 $m-size;
+  font-size: $l-size;
+  font-weight: $light;
+  color: $dark-grey-blue;
+
+  @media only screen and (max-width: $sz-xl) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: $sz-s) {
+    font-size: 2rem;
+  }
+}
+
+.sub-heading span {
+  z-index: 10000;
+  margin-top: $l-size;
+  font-size: $l-size;
+  font-weight: $bold;
+  color: #fff;
+
+  @media only screen and (max-width: $sz-m-s) {
+    font-size: $l-size;
+  }
+
+  @media only screen and (max-width: $sz-s) {
+    font-size: 2rem;
+  }
+}
+
+.button-wrap {
+  z-index: 10000;
+  width: 410px;
+  margin-top: 4.6rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  @media only screen and (max-width: $sz-s) {
+    width: 280px;
+  }
+}
+
+.call-to-action-white {
+  @include button-one;
+  color: #fff;
+  background-color: $mid-orange;
+  border-radius: $border;
+  transition: 300ms;
+  @include bx-shadow-two;
+}
+
+.call-to-action-white:hover {
+  @include bx-shadow;
+  background-color: $dark-grey-blue;
+  color: $white;
+}

@@ -1,0 +1,50 @@
+.we-are-open {
+    margin-top: 3.8rem;
+    cursor: pointer;
+
+    a h2 {
+        transition: 200ms;
+    }
+
+    a h2:hover {
+        color: $mid-orange;
+    }
+}
+
+.open-info-wrap {
+    @include center;
+    margin: 1.8rem;
+    flex-direction: column;
+
+    .open-for-business {
+        @include center;
+        flex-direction: column;
+
+        h3 {
+            font-size: 3rem;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        p {
+            margin-top: 1.8rem;
+            max-width: 450px;
+        }
+
+        ;
+
+    }
+
+    .opening-times {
+        display: flex;
+        margin: 1.8rem;
+
+        .days {
+            margin: 0.9rem 1rem;
+        }
+
+        .times {
+            margin: 0.9rem 1rem;
+        }
+    }
+}

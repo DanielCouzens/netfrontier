@@ -1,0 +1,68 @@
+.screens-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-right: 2rem;
+}
+
+.screens {
+    position: relative;
+    border: 10px solid #fceef0;
+    border-radius: 20px;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+        color: #fff;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+.screens::after {
+    background-color: #fceef0;
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+}
+
+.mobile {
+    height: 130px;
+    width: 75px;
+}
+
+.mobile::after {
+    right: -13px;
+    top: 18px;
+    width: 8px;
+    height: 16px;
+}
+
+.tablet {
+    height: 175px;
+    width: 125px;
+}
+
+.tablet::after {
+    right: -13px;
+    top: 18px;
+    width: 8px;
+    height: 16px;
+}
+
+.desktop {
+    height: 215px;
+    width: 335px;
+}
+
+.desktop::after {
+    bottom: -18px;
+    width: 98px;
+    height: 16px;
+
+}

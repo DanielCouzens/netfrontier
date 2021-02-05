@@ -1,0 +1,159 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(98deg, $vdark-grey-blue, $dark-grey-blue);
+  height: 300px;
+  position: relative;
+
+  @media (max-width: $sz-m-s) {
+    height: 560px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+
+  .footer-nav {
+    position: absolute;
+    left: 50px;
+
+    @media (max-width: $sz-m-m) {
+      position: relative;
+      left: 0px;
+    }
+
+    ul {
+      li {
+        margin: 1px;
+        list-style: inherit;
+        color: rgba(255, 255, 255, 0.514);
+
+        a {
+          color: $white;
+          font-size: $xxs-size;
+        }
+      }
+    }
+  }
+
+  .footer-address {
+    position: absolute;
+    right: 50px;
+
+    @media (max-width: $sz-m-m) {
+      position: relative;
+      right: 0;
+    }
+
+    p:first-child {
+      font-weight: 800;
+    }
+
+    p {
+      span {
+        font-weight: 800;
+        color: #fff;
+      }
+
+      font-size: $xxs-size;
+      color: #fff;
+      margin: 3px $xs-size;
+    }
+
+    a {
+      margin: 1.8rem $xs-size;
+      color: $white;
+      font-size: $xxs-size;
+    }
+  }
+
+  .logo-container-footer {
+    width: 200px;
+    @include center;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+
+    .logo-footer {
+      margin-bottom: 10px;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    .logo-wordmark-footer {
+      @include center;
+      flex-direction: column;
+
+      .logo-net-frontier-footer h3 {
+        margin-bottom: -3px;
+        // text-align: left;
+        font-size: 2.5rem;
+        color: $white;
+      }
+
+      // .logo-net-frontier-footer span {
+      //   position: relative;
+      //   left: -6px;
+      //   font-weight: 300;
+      //   font-size: 2rem;
+      //   color: $white;
+      // }
+
+      .logo-subheading-footer h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: $white;
+      }
+    }
+
+    a {
+      margin-top: 10px;
+      color: $white;
+      font-size: $xxs-size;
+    }
+  }
+
+  .social-links {
+    margin-top: 10px;
+
+    a {
+      margin: 5px 4px;
+      transition: opacity 200ms;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+  background-color: $vdark-grey-blue;
+
+  .directory {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  a {
+    font-size: 12px;
+    color: $white;
+    margin: 0 $m-size;
+    opacity: 0.6;
+  }
+
+  span {
+    font-size: 12px;
+    margin: 0 $m-size;
+    opacity: 0.6;
+  }
+
+  color: $white;
+}

@@ -1,0 +1,143 @@
+.section-blog {
+  min-height: 800px;
+  @include center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: $light-blue;
+
+  .blog-hero {
+    width: 100vw;
+    height: 260px;
+    z-index: 2;
+    background-color: $mid-orange;
+    @include center;
+
+    h1 {
+      z-index: 5;
+      width: 100vw;
+      text-align: center;
+      margin: 1.5rem;
+      color: #fff;
+
+      @media (max-width: 550px) {
+        font-size: 3.5rem;
+        margin: 2rem;
+      }
+    }
+  }
+
+  ol {
+    margin: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    li {
+      .link {
+        width: 300px;
+        height: 300px;
+        @include center;
+        flex-direction: column;
+        margin: 2.5rem;
+        background-color: #fff;
+        border-radius: $border;
+        @include bx-shadow-two;
+        transition: 200ms;
+
+        p {
+          padding-bottom: 1rem;
+          border-bottom: 3px solid $mid-orange;
+
+        }
+
+        .gatsby-image-wrapper {
+          width: 175px;
+        }
+      }
+
+      .link:hover {
+        background-color: $light-blue;
+      }
+
+      h2 {
+        max-width: 290px;
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
+.blog-page {
+  margin: 3rem auto 3rem;
+  max-width: 1000px;
+
+  .blog-wrap {
+    margin: 0 3rem;
+    padding: 3rem;
+    @include bx-shadow-two;
+    border-radius: $border;
+
+    @media (max-width: 385px) {
+      margin: 0 2rem;
+    }
+
+    h1 {
+      border-bottom: 1px solid $mid-orange;
+      font-size: 4rem;
+      padding: 4rem;
+      color: $dark-grey-blue;
+
+
+      @media (max-width: 385px) {
+        font-size: 3.5rem;
+        padding: 0 0 3rem;
+      }
+    }
+
+    h2 {
+      border-top: 1px solid $mid-orange;
+      font-size: 4rem;
+      margin: 3rem 0;
+      padding: 3rem 0 0rem;
+    }
+
+    ol {
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+
+      li {
+        font-weight: bold;
+        margin-left: 3rem;
+        list-style-type: inherit;
+
+        p {
+          font-weight: bold;
+        }
+      }
+    }
+
+    p {
+      margin: 2rem 0;
+
+      a {
+        color: $mid-orange;
+        font-weight: bold;
+      }
+    }
+
+    img {
+      display: block;
+      margin: 5rem auto;
+      width: 100%;
+      max-width: 500px;
+      @include bx-shadow-two;
+      border-radius: $border;
+    }
+  }
+}

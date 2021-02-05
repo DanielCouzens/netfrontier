@@ -1,0 +1,28 @@
+.twenty-off {
+  display: flex;
+  justify-content: center;
+  z-index: 10000;
+  width: 109px;
+  height: 109px;
+  position: fixed;
+  background-color: $mid-orange;
+  color: #fff;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+
+  .twenty-text {
+    transform: rotate(-45deg);
+
+    h6 {
+      margin-top: 14px;
+      margin-right: 5px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.bottom-banner {
+  margin: 3.8rem 0;
+  text-align: center;
+  padding: 0 1.8rem;
+  border-top: 3px solid $mid-orange;
+
+  h3 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: $mid-orange;
+    font-weight: 800;
+  }
+}

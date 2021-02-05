@@ -1,0 +1,27 @@
+.success-wrap {
+  @include center;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  min-height: 500px;
+  margin: 1.8rem;
+
+  h1 {
+    margin: 50px;
+  }
+
+  a {
+    font-size: 2rem;
+    color: $dark-grey-blue;
+    transition: color 300ms;
+
+  }
+
+  p {
+    font-size: 2rem;
+    margin: 0 0 20px;
+  }
+
+  a:hover {
+    color: $mid-orange;
+  }
+}

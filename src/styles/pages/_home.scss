@@ -1,0 +1,84 @@
+// HERO QUESTION
+
+.hero-question {
+  @include center;
+  flex-direction: column;
+
+  img {
+    border-radius: 100%;
+    @include bx-shadow-two;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  height: calc(100vh - 32px);
+  min-height: 500px;
+}
+
+.white-wrap {
+  background-color: $white;
+}
+
+.welcome-row {
+  display: grid;
+  margin-bottom: 3.5rem;
+  grid-template-columns: 1fr 1fr;
+
+  @media only screen and (max-width: $sz-m-l) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.welcome-text {
+  padding: $xl-size $xl-size;
+  background-color: $white;
+
+  @include center;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: $m-size;
+    font-size: $m-l-size;
+    width: 80%;
+  }
+
+  p {
+    margin: $xs-size 0;
+    width: 80%;
+  }
+
+  @media only screen and (max-width: $sz-m-l) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $sz-m-s) {
+    padding: $xl-size 0;
+  }
+}
+
+.welcome-pic {
+  @include bx-shadow-two;
+  height: 100%;
+  width: 100%;
+
+  .mobile-phone-netfrontier {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cta-wrap-home {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+
+  a:last-child {
+    margin-left: 3.6rem;
+    @media (max-width: $sz-m-s) {
+      margin-left: 1.8rem;
+    }
+  }
+}

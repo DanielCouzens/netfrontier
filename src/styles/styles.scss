@@ -1,0 +1,44 @@
+// global
+@import './base/media';
+@import './base/settings';
+@import './base/base';
+
+// popups
+@import './components/popups';
+
+// components
+@import './components/squares';
+@import './components/covid';
+@import './components/cta';
+@import './components/twenty';
+@import './components/header';
+@import './components/footer';
+@import './components/ourWork';
+@import './components/hero';
+@import './components/features';
+@import './components/services';
+@import './components/screens';
+@import './components/banner';
+@import './components/scroller';
+@import './components/testimonials';
+@import './components/title';
+@import './components/form';
+@import './components/mobile';
+@import './components/free';
+@import './components/quick';
+@import './components/open';
+@import './components/bottom_banner';
+
+// pages
+@import './pages/not_found';
+@import './pages/questionnaire';
+@import './pages/prices';
+@import './pages/services';
+@import './pages/process';
+@import './pages/about';
+@import './pages/contact';
+@import './pages/success';
+@import './pages/faq';
+@import './pages/home';
+@import './pages/blog';
+@import './pages/privacy';

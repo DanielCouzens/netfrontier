@@ -1,0 +1,93 @@
+.our-work-wrap {
+  margin-bottom: $m-size;
+}
+
+.our-work-wrap h2 {
+  text-align: center;
+  margin: $l-size 0 $xl-size;
+}
+
+.our-work-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $sz-m-s) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.button-wrap-work {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    width: 100px;
+    display: block;
+
+    @media (max-width: $sz-m) {
+      width: 60px;
+    }
+  }
+
+  h2 {
+    color: $white;
+    margin-bottom: 0;
+
+    @media (max-width: $sz-m) {
+      font-size: 2.5rem;
+    }
+  }
+
+
+}
+
+.overlay {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.work-cell:hover .overlay {
+  opacity: 1;
+}
+
+.work-cell:hover .button-wrap-work {
+  animation-name: visit;
+  animation-duration: 300ms;
+  animation-direction: linear;
+}
+
+@keyframes visit {
+  0% {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+.work-cell:hover img {
+  opacity: 0.5;
+}
+
+.work-cell {
+  position: relative;
+  cursor: pointer;
+}

@@ -1,0 +1,90 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+q,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: $dark-grey-blue;
+}
+
+time,
+label,
+li,
+button,
+span,
+a,
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: $s-size;
+}
+
+span {
+  @media (max-width: $sz-m-s) {
+    font-size: 1.4rem;
+  }
+}
+
+p {
+  color: $dark-grey-blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: $xl-size;
+  text-align: center;
+}
+
+h2 {
+  font-size: $l-size;
+}
+
+h3 {
+  font-size: $m-size;
+}
+
+h4 {
+  font-size: $s-size;
+}
+
+.psuedo {
+  height: 90px;
+}
+
+.layout {
+  background-color: $light-blue;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  // background-image: url("../images/icons/backboot.png");
+  // background-repeat: repeat;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

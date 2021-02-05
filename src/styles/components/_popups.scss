@@ -1,0 +1,81 @@
+.cms-info {
+    display: inline;
+    margin-left: 5px;
+    position: relative;
+    opacity: 1;
+    top: -1px;
+
+    cursor: pointer;
+    transition: 200ms;
+    animation: attention 3s infinite;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 100%;
+
+    img {
+        position: relative;
+        top: 2px;
+    }
+}
+
+@keyframes attention {
+    0% {
+        // opacity: 0.3;
+        background-color: #fff;
+    }
+
+    50% {
+        // opacity: 1;
+        background-color: #ea77578c;
+    }
+
+    100% {
+        // opacity: 0.3;
+        background-color: #fff;
+    }
+}
+
+
+
+.cms-info:hover {
+    background-color: $mid-blue;
+    animation: none;
+}
+
+.information-wrap {
+    position: relative;
+
+    .information-inner {
+        margin-top: 0.9rem;
+        transition: 300ms;
+        width: 100%;
+        left: calc(50% - 50%);
+        position: absolute;
+        border-radius: $border;
+        background-color: $dark-grey-blue;
+        @include bx-shadow;
+
+        p {
+            color: #fff;
+
+            .highlight-info {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .information-inner::after {
+        content: '';
+        background-image: url("../images/icons/cross-sign.svg");
+        display: block;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        right: 0;
+        z-index: 2000000000000;
+        position: absolute;
+        background-position: center;
+        background-size: contain;
+        margin: 4px;
+    }
+}

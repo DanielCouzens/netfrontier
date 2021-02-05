@@ -1,0 +1,81 @@
+// BANNER
+.free-section {
+  background-color: $mid-orange;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  border-bottom: 1px solid #43464b1a;
+
+  .free-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .offer-free {
+      @include center;
+      flex-direction: column;
+
+      .selected-plans {
+        font-size: 1.2rem;
+        background-color: #fff;
+        padding: 5px 10px;
+        border-radius: $border;
+        margin-top: 3px;
+        font-style: italic;
+        opacity: 0.8;
+      }
+
+      h2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+        @media only screen and (max-width: $sz-m) {
+          font-size: 2.5rem;
+        }
+
+        span {
+          text-align: center;
+          font-size: $m-l-size;
+          font-weight: 700;
+          text-transform: uppercase;
+
+          @media only screen and (max-width: $sz-m) {
+            font-size: 1.8rem;
+          }
+        }
+
+        font-weight: 100;
+        font-size: $m-l-size;
+        padding: 0 $m-size;
+
+        @media only screen and (max-width: $sz-s) {
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    img {
+      background-color: #fff;
+      border-radius: 100%;
+      padding: 3px;
+      width: 40px;
+      height: 40px;
+
+      @include bx-shadow-two;
+
+      @media only screen and (max-width: $sz-s) {
+        margin-top: 5px;
+      }
+    }
+
+    @media only screen and (max-width: $sz-s) {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.testimonials {
+    background-color: $white;
+    text-align: center;
+    padding: 18px 0 25px;
+    margin: 0 $l-size;
+    border-radius: $border;
+    @include bx-shadow-two;
+    @include center;
+    flex-direction: column;
+
+    @media only screen and (max-width: $sz-s) {
+        margin: 0 1.8rem;
+    }
+
+    .animate {
+        @include center;
+        flex-direction: column;
+    }
+
+    .testimonial-img {
+        width: 80px;
+        height: 80px;
+        background-color: $white;
+        border-radius: 50%;
+        @include center;
+
+        img {
+            display: block;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .stars {
+        display: flex;
+        margin: 2px 0 10px;
+
+        img {
+            display: block;
+            width: 15px;
+            height: 15px;
+            margin: 0 2px;
+        }
+    }
+
+    .quote-text {
+        margin: 0 $l-size;
+        font-weight: 100;
+        max-width: 500px;
+        position: relative;
+
+    }
+
+    q {
+
+        margin: $s-size $s-size;
+        font-size: $m-size;
+        color: $dark-grey-blue;
+    }
+
+
+    .quote-one {
+        top: -40px;
+        left: -30px;
+        position: absolute;
+
+        img {
+            margin: 10px;
+            width: 20px;
+        }
+    }
+
+    .quote-two {
+        position: absolute;
+        right: -30px;
+        bottom: -40px;
+
+        img {
+            margin: 10px;
+            transform: rotate(180deg);
+            width: 20px;
+        }
+    }
+
+    .testimonial-name {
+        h3 {
+            margin: 10px 0 20px;
+        }
+
+        a {
+            margin-top: 10px;
+            border: 1px solid $light-orange;
+            color: $mid-orange;
+            padding: 5px 10px;
+            transition: 300ms;
+            border-radius: $border;
+        }
+
+        a:hover {
+            color: $dark-grey-blue;
+            border: 1px solid $dark-grey-blue;
+            @include bx-shadow-two;
+        }
+    }
+}

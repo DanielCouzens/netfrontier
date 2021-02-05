@@ -1,0 +1,90 @@
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $l-size auto;
+  border-radius: $border;
+
+  @media only screen and (max-width: $sz-m-s) {
+    margin: $l-size;
+  }
+
+  @media only screen and (max-width: $sz-s) {
+    margin: 0 1.8rem;
+  }
+}
+
+form {
+  min-width: 500px;
+  width: 50%;
+
+  @media only screen and (max-width: $sz-m-s) {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  input {
+    font-size: 2rem;
+    width: 100%;
+    border-radius: $border;
+  }
+
+  input {
+    font-size: 2rem;
+    padding: $s-size;
+    margin: $l-size 0;
+    background-color: $white;
+    border: none;
+    outline: $mid-orange;
+    @include bx-shadow-two;
+  }
+
+  .text-area {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: $s-size;
+    font-size: 2rem;
+    @include bx-shadow-two;
+    width: 100%;
+    height: $m-height;
+    margin: $l-size 0;
+    background-color: $white;
+    border: none;
+    border-radius: $border;
+    outline: none;
+  }
+
+  .form-buttons {
+    width: 100%;
+
+    @media (max-width: $sz-s) {
+      margin-bottom: 1.8rem;
+    }
+
+
+
+    button {
+      background-color: $mid-orange;
+      @include bx-shadow-two;
+      color: $white;
+      font-weight: 100;
+      width: 100%;
+      transition: 300ms;
+      cursor: pointer;
+      height: 60px;
+      outline: none;
+      border: none;
+    }
+
+    button:hover {
+      @include bx-shadow;
+      background-color: $dark-grey-blue;
+    }
+  }
+}
+
+.danger {
+  color: $mid-orange;
+  margin-top: -31px;
+  margin-bottom: 10px;
+}

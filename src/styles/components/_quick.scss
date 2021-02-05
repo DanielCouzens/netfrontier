@@ -1,0 +1,133 @@
+.quick-section {
+  Z-INDEX: 10000000;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 3.8rem;
+
+  @media only screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.quick-row {
+  // margin-top: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  flex-direction: row;
+
+  // @media only screen and (max-width: $sz-m-l) {
+  //   grid-template-columns: 1fr 1fr;
+  // }
+
+  @media only screen and (max-width: $sz-m-s) {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: $sz-s) {
+    margin: 0;
+  }
+
+
+}
+
+.quick-warp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  margin: 1rem;
+
+  @media only screen and (max-width: $sz-s) {}
+
+  h2 {
+    @include center;
+    color: $dark-grey-blue;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    border-radius: $border;
+    margin-top: 1.8rem;
+  }
+
+  // .quick-two,
+  // .quick-five {
+  //   animation-iteration-count: 1;
+  //   animation: smiles 3s ease;
+  //   animation-delay: 1.5s;
+
+  //   @keyframes smiles {
+  //     0% {
+  //       transform: translateY(0px);
+  //     }
+
+  //     50% {
+  //       transform: translateY(70px);
+  //     }
+
+  //     100% {
+  //       transform: translateY(0px);
+  //     }
+  //   }
+
+  //   @media only screen and (max-width: $sz-m-s) {
+  //     animation: none;
+  //   }
+  // }
+
+  //   .quick-three,
+  //   .quick-four {
+  //     // transform: translateY(0px);
+
+  //     animation: smile 3s ease;
+  //     animation-iteration-count: 1;
+  //     animation-delay: 1.5s;
+
+  //     @keyframes smile {
+  //       0% {
+  //         transform: translateY(0px);
+  //       }
+
+  //       50% {
+  //         transform: translateY(110px);
+  //       }
+
+  //       100% {
+  //         transform: translateY(0px);
+  //       }
+  //     }
+
+  //     @media only screen and (max-width: $sz-m-s) {
+  //       animation: none;
+  //     }
+  //   }
+}
+
+.quick-icon {
+  @include bx-shadow-two;
+  background-color: #fff;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 3px solid $mid-blue;
+  border-radius: 100%;
+  color: $mid-orange;
+  //   margin: $s-size;
+  @include center;
+
+  @media (max-width: 720px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  img {
+    display: block;
+    width: 40px;
+
+    @media (max-width: 720px) {
+      width: 30px;
+    }
+  }
+}

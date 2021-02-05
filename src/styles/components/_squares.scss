@@ -1,0 +1,75 @@
+.squares-container {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 80vh;
+  top: 90px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $sz-m-s) {
+    top: 80px;
+  }
+}
+
+.squares-hero-wrap {
+  position: absolute;
+  transform: rotate(405deg);
+  left: calc(50% - 13vw);
+  z-index: 0;
+  filter: drop-shadow(40px 40px 40px rgba(50, 50, 0, 0.08));
+  animation: spins 3s;
+  animation-timing-function: ease-out;
+
+  @keyframes spins {
+    0% {
+      transform: rotate(45deg);
+    }
+
+    100% {
+      transform: rotate(405deg);
+    }
+  }
+
+  @media (max-width: $sz-m-s) {
+    left: calc(50% - 20vw);
+  }
+}
+
+.squares-hero-wrap-two {
+  left: calc(20% - 13vw);
+
+  @media (max-width: $sz-m-s) {
+    left: calc(68% - 20vw);
+  }
+}
+
+.squares-hero-wrap-three {
+  left: calc(80% - 13vw);
+
+  @media (max-width: $sz-m-s) {
+    left: calc(32% - 20vw);
+  }
+}
+
+.squares-hero {
+  background-color: #ffffff;
+  clip-path: polygon(0% 0%,
+      0% 100%,
+      25% 100%,
+      25% 25%,
+      75% 25%,
+      75% 75%,
+      25% 75%,
+      25% 100%,
+      100% 100%,
+      100% 0%);
+  width: 26vw;
+  height: 26vw;
+  @include bx-shadow-two;
+
+  @media (max-width: $sz-m-s) {
+    width: 40vw;
+    height: 40vw;
+  }
+}

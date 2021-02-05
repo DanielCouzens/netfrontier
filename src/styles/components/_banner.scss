@@ -1,0 +1,36 @@
+.banner {
+  margin: 3.5rem 0 2.2rem;
+  padding: $var-size-three 0 $var-size-three;
+  text-align: center;
+  background-color: $mid-orange;
+
+  .inner-banner {
+    height: 100%;
+  }
+
+  h2 {
+    color: $white;
+    font-size: $m-l-size;
+    padding-top: $l-size;
+  }
+
+  .call {
+    width: 100%;
+    margin-top: $m-size;
+    @include center;
+
+    button {
+      border: none;
+      @include button-one;
+      color: $dark-grey-blue;
+      background-color: $white;
+      border-radius: $border;
+    }
+
+    button:hover {
+      @include bx-shadow;
+      background-color: $dark-grey-blue;
+      color: $white;
+    }
+  }
+}

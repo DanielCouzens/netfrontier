@@ -1,0 +1,43 @@
+.title-wrap {
+  padding: 30% 0 0;
+
+  @media only screen and (max-width: $sz-l) {
+    padding: 50% 0 0;
+  }
+
+  .inner-title {
+    background-color: $mid-orange;
+    padding: $s-size $l-size;
+
+    h1 {
+      color: $white;
+      text-align: left;
+      font-size: 4rem;
+
+      @media only screen and (max-width: $sz-m-m) {
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
+
+    .sub-title h2 {
+      font-size: $l-size;
+      font-weight: $light;
+      color: $white;
+
+      @media only screen and (max-width: $sz-m-m) {
+        text-align: center;
+        font-size: 2.5rem;
+      }
+
+      @media only screen and (max-width: $sz-s) {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .services-title {
+    background-color: $mid-blue;
+  }
+}

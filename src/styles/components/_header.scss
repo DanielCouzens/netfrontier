@@ -1,0 +1,159 @@
+.header-wrap {
+  height: 90px;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100000;
+  background-color: $white;
+  @include bx-shadow;
+
+  .logo-container-wrap {
+    margin-top: 5px;
+    margin-left: 1.8rem;
+    display: flex;
+
+    .logo {
+      @media (max-width: $sz-x-s) {
+        top: -5px;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .logo-container {
+      margin-left: 1.8rem;
+      @include center;
+      flex-direction: column;
+
+      .logo-net-frontier p {
+        font-size: 2.5rem;
+        display: block;
+        color: $dark-grey-blue;
+        font-weight: 800;
+        font-family: 'Ubuntu', sans-serif !important;
+        line-height: 1.8rem;
+
+
+        @media (max-width: $sz-x-s) {
+          font-size: 2rem;
+        }
+      }
+
+      .logo-subheading p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        display: block;
+        font-size: 1.3rem;
+        color: $mid-orange;
+
+        @media (max-width: $sz-x-s) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .nav-link-container {
+    margin-right: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .contact-details {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+
+      .tel {
+        margin-right: 1.8rem;
+
+        a {
+          color: $dark-grey-blue;
+          font-size: 1.6rem;
+          transition: 300ms;
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        a:hover {
+          color: $mid-orange;
+        }
+
+        @media (max-width: $sz-m) {
+          display: none;
+        }
+      }
+
+      .social-links {
+        border-radius: 12px;
+        @include center;
+
+        @media (max-width: $sz-m) {
+          display: none;
+        }
+
+        a {
+          cursor: pointer;
+          @include center;
+          margin: 0 4px;
+
+          img {
+            width: 20px;
+            height: 20px;
+            transition: filter 200ms;
+          }
+        }
+
+        a:hover {
+          img {
+            filter: grayscale(1);
+          }
+        }
+
+        a:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .nav {
+      z-index: 1;
+      display: flex;
+      width: 100%;
+
+      @media only screen and (max-width: $sz-m) {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          font-size: $s-size;
+          margin: 10px;
+
+          a {
+            font-size: 1.6rem;
+            color: $dark-grey-blue;
+          }
+        }
+
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $sz-m) {
+      display: none;
+    }
+  }
+}
