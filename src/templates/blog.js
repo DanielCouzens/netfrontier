@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-
 import Seo from '../components/Seo'
 
 export const query = graphql`
@@ -26,7 +26,7 @@ export const query = graphql`
 `
 
 const Blog = props => {
-  const image = props.data.contentfulBlog.thumbnail.src
+  const images = props.data.contentfulBlog.thumbnail.src
   const options = {
     renderNode: {
       'embedded-asset-block': node => {
@@ -42,7 +42,7 @@ const Blog = props => {
       <Seo
         title={props.data.contentfulBlog.title}
         description={props.data.contentfulBlog.description}
-        image={image}
+        image={images}
       />
       <div className="blog-page">
         <div className="blog-wrap">
@@ -52,7 +52,11 @@ const Blog = props => {
             props.data.contentfulBlog.body.json,
             options
           )}
-          <p>Article by {props.data.contentfulBlog.author}</p>
+          <Link to="/about">
+            <div className="article-by">
+              <p>Article by {props.data.contentfulBlog.author}</p>
+            </div>
+          </Link>
         </div>
       </div>
     </Layout>

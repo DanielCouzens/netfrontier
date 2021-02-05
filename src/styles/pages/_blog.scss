@@ -1,3 +1,5 @@
+/*** The Blog Page Listing Articles ***/
+
 .section-blog {
   min-height: 800px;
   @include center;
@@ -71,6 +73,9 @@
   }
 }
 
+
+/*** The Blog Article ***/
+
 .blog-page {
   margin: 3rem auto 3rem;
   max-width: 1000px;
@@ -91,9 +96,8 @@
       padding: 4rem;
       color: $dark-grey-blue;
 
-
-      @media (max-width: 385px) {
-        font-size: 3.5rem;
+      @media (max-width: 500px) {
+        font-size: 3rem;
         padding: 0 0 3rem;
       }
     }
@@ -138,6 +142,25 @@
       max-width: 500px;
       @include bx-shadow-two;
       border-radius: $border;
+    }
+
+    .article-by {
+      margin-top: 3rem;
+      background-color: $mid-orange;
+      border-radius: $border;
+      @include bx-shadow-two;
+      transition: 200ms;
+
+      p {
+        text-align: center;
+        padding: 1.8rem;
+        color: #fff;
+      }
+    }
+
+    .article-by:hover {
+      background-color: $dark-grey-blue;
+      @include bx-shadow;
     }
   }
 }
