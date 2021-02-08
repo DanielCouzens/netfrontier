@@ -2,7 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-// import SchemaOrg from './SchemaOrg'
+
+import MainImage from '../images/Net-Frontier-Default.jpg'
 
 const Seo = ({
   title,
@@ -28,7 +29,7 @@ const Seo = ({
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
+        image: MainImage,
         url: `${siteUrl}${pathname || '/'}`,
         schemaMarkup,
       }
@@ -53,9 +54,10 @@ const Seo = ({
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
-            {seo.image && <meta property="og:image" content={seo.image} />}
-            <meta property="og:image:width" content="800" />
-            <meta property="og:image:height" content="533" />
+            {seo.image && <meta property="og:image" content={MainImage} />}
+
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="627" />
             <meta name="twitter:card" content="summary_large_image" />
             {seo.title && <meta name="twitter:title" content={seo.title} />}
             {seo.description && (
