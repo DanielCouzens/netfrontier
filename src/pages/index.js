@@ -49,6 +49,9 @@ function Index() {
           fluid(maxWidth: 700, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
+          fixed {
+            src
+          }
         }
       }
     }
@@ -56,7 +59,11 @@ function Index() {
 
   return (
     <Layout>
-      <Seo title="Net Frontier" schemaMarkup={schema} />
+      <Seo
+        title="Net Frontier"
+        schemaMarkup={schema}
+        image={image.netfrontier.childImageSharp.fixed.src}
+      />
 
       <HeroOpt />
       <Free />
