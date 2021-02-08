@@ -7,7 +7,7 @@ import { StaticQuery, graphql } from 'gatsby'
 const Seo = ({
   title,
   description,
-  image: metaImage,
+  image,
   pathname,
   article,
   schemaMarkup,
@@ -28,10 +28,7 @@ const Seo = ({
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image:
-          metaImage && metaImage.src
-            ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-            : null,
+        image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
         schemaMarkup,
       }
