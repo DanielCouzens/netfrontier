@@ -59,11 +59,7 @@ function Index() {
 
   return (
     <Layout>
-      <Seo
-        title="Net Frontier"
-        schemaMarkup={schema}
-        image={image.netfrontier.childImageSharp.fixed.src}
-      />
+      <Seo title="Net Frontier" schemaMarkup={schema} />
 
       <HeroOpt />
       <Free />
