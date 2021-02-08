@@ -29,7 +29,7 @@ const Seo = ({
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: MainImage,
+        image: image || defaultImage,
         url: `${siteUrl}${pathname || '/'}`,
         schemaMarkup,
       }
@@ -54,7 +54,7 @@ const Seo = ({
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
-            {seo.image && <meta property="og:image" content={MainImage} />}
+            {seo.image && <meta property="og:image" content={seo.image} />}
 
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="627" />
