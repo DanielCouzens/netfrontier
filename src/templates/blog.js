@@ -17,6 +17,8 @@ export const query = graphql`
       thumbnail {
         fluid(maxWidth: 300) {
           ...GatsbyContentfulFluid
+        }
+        fixed {
           src
         }
       }
@@ -26,7 +28,6 @@ export const query = graphql`
 `
 
 const Blog = props => {
-  const images = props.data.contentfulBlog.thumbnail.src
   const options = {
     renderNode: {
       'embedded-asset-block': node => {
@@ -42,7 +43,7 @@ const Blog = props => {
       <Seo
         title={props.data.contentfulBlog.title}
         description={props.data.contentfulBlog.description}
-        image={images}
+        image={props.data.contentfulBlog.thumbnail.fixed.src}
       />
       <div className="blog-page">
         <div className="blog-wrap">
