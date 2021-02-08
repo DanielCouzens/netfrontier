@@ -31,7 +31,7 @@ module.exports = {
       logo: './images/logo/android-chrome-512x512.png',
     },
     social: {
-      twitter: '@netfrontier9',
+      twitter: '@net_frontier',
       fbAppID: '',
     },
     categories: [
