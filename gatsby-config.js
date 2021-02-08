@@ -17,7 +17,7 @@ module.exports = {
     siteUrl: 'https://www.netfrontier.co.uk',
     url: 'https://www.netfrontier.co.uk',
     // No trailing slash allowed!
-    image: '/static/favicon.ico',
+    image: '/src/images/logo/android-chrome-512x512.png',
     logo: '/src/images/logo/android-chrome-512x512.png',
     author: {
       name: 'Daniel Couzens',
