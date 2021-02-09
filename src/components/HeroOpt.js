@@ -36,13 +36,13 @@ const HeroOpt = () => {
               </div>
             </Link>
             <Link
-              to="/contact"
+              to="/questionnaire"
               data-sal="slide-left"
               data-sal-delay="200"
               data-sal-easing="ease-in"
             >
               <div className="call-to-action-white two">
-                <span>Get In Touch</span>
+                <span>Get Started</span>
               </div>
             </Link>
           </div>

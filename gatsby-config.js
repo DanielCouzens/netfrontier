@@ -197,12 +197,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-advanced-sitemap`,
+      resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [
           `/dev-404-page`,
           `/404`,
           `/404.html`,
+          `/success`,
           `/offline-plugin-app-shell-fallback`,
           /(\/)?hash-\S*/, // you can also pass valid RegExp to exclude internal tags for example
         ],
@@ -220,8 +221,6 @@ module.exports = {
             }
           }
         }`,
-        createLinkInHead: true, // optional: create a link in the `<head>` of your site
-        addUncaughtPages: true, // optional: will fill up pages
       },
     },
   ],
