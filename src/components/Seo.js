@@ -34,8 +34,6 @@ const Seo = ({
         schemaMarkup,
       }
 
-      // console.log(seo.siteUrl)
-
       return (
         <>
           <Helmet

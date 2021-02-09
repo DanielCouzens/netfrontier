@@ -53,6 +53,26 @@ const Footer = () => {
             </li>
             <li>
               <Link
+                to="/blog"
+                activeStyle={{
+                  fontWeight: '800',
+                }}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/faq"
+                activeStyle={{
+                  fontWeight: '800',
+                }}
+              >
+                FAQ
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/contact"
                 activeStyle={{
                   fontWeight: '800',

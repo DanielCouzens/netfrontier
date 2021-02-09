@@ -206,6 +206,20 @@ module.exports = {
           `/offline-plugin-app-shell-fallback`,
           /(\/)?hash-\S*/, // you can also pass valid RegExp to exclude internal tags for example
         ],
+        query: `{
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allContentfulBlog {
+            edges {
+              node {
+                slug
+              }
+            }
+          }
+        }`,
         createLinkInHead: true, // optional: create a link in the `<head>` of your site
         addUncaughtPages: true, // optional: will fill up pages
       },

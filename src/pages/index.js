@@ -14,14 +14,12 @@ import BottomBanner from '../components/BottomBanner'
 import Seo from '../components/Seo'
 import Open from '../components/Open'
 
-import Logo from '../images/logo/android-chrome-512x512.png'
-
 function Index() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     name: 'Net Frontier',
-    image: { Logo },
+    image: '../images/logo/android-chrome-512x512.png',
     '@id': '',
     url: 'https://www.netfrontier.co.uk/',
     telephone: '01454 616080',
