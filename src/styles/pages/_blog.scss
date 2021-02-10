@@ -1,7 +1,6 @@
 /*** The Blog Page Listing Articles ***/
 
 .section-blog {
-  min-height: 800px;
   @include center;
   justify-content: flex-start;
   flex-direction: column;

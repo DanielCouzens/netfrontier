@@ -99,8 +99,14 @@ const Contact = ({ values }) => (
             {' '}
             click here to go to our questionnaire page
           </Link>
-          .
+          . The questionnaire page takes you through various questions to help
+          us understand more about what you require from your website.
         </p>
+
+        <div className="twenty-four">
+          <p>We aim to get back to all enquiries within 24 hours.</p>
+          <p>Usually we are much quicker!</p>
+        </div>
       </div>
     </div>
 

@@ -247,7 +247,6 @@ class Faq extends Component {
                   className={
                     this.state.isToggleOn1 ? 'chev-open' : 'chev-close'
                   }
-                  // onClick={this.handleclick1}
                   src={chev}
                   width="20"
                   height="20"
