@@ -200,11 +200,11 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [
-          `/dev-404-page`,
-          `/404`,
-          `/404.html`,
-          `/success`,
-          `/offline-plugin-app-shell-fallback`,
+          '/dev-404-page',
+          '/404',
+          '/404.html',
+          '/success',
+          '/offline-plugin-app-shell-fallback',
         ],
         query: `{
           site {
@@ -220,6 +220,15 @@ module.exports = {
             }
           }
         }`,
+        serialize: ({ site, allSitePage }) => {
+          return allSitePage.edges.map(edge => {
+            return {
+              url: site.siteMetadata.siteUrl + edge.node.slug,
+              changefreq: 'daily',
+              priority: 0.5,
+            }
+          })
+        },
       },
     },
   ],
