@@ -1,110 +1,107 @@
 .questionnaire-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: $l-size auto;
-    border-radius: $border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: $l-size auto;
+  border-radius: $border;
 
-    @media only screen and (max-width: $sz-m-s) {
-        margin: $l-size;
+  @media only screen and (max-width: $sz-m-s) {
+    margin: $l-size;
+  }
+
+  @media only screen and (max-width: $sz-s) {
+    margin: 0 1.8rem;
+  }
+
+  h1 {
+    max-width: 1200;
+    width: 90%;
+
+    margin: 5rem auto 3.6rem;
+    color: $dark-grey-blue;
+
+    @media only screen and (max-width: $sz-s) {
+      font-size: 3rem;
+    }
+  }
+
+  .get-started-wrap {
+    border-top: 3px solid #ea7857;
+    width: 90%;
+    max-width: 1200px;
+    background-color: $white;
+    padding: 1.8rem;
+    margin: 1.8rem;
+    border-radius: $border;
+    @include bx-shadow-two;
+    @include center;
+    flex-direction: column;
+
+    p {
+      span {
+        font-weight: bold;
+      }
     }
 
     @media only screen and (max-width: $sz-s) {
-        margin: 0 1.8rem;
     }
+  }
 
-    h1 {
-        margin: 5rem 0 3.6rem;
-        color: $dark-grey-blue;
+  form {
+    width: 90%;
+    max-width: 1200px;
 
-        @media only screen and (max-width: $sz-s) {
-            font-size: 3rem;
+    .name-company-wrap {
+      display: flex;
+
+      .q-one {
+        margin-right: 1.8rem;
+      }
+
+      .q-two {
+        margin-left: 1.8rem;
+      }
+
+      .company-details {
+        width: 50%;
+
+        input {
+          width: 100%;
         }
+      }
+    }
+  }
+
+  input {
+    margin: 1.8rem 0;
+  }
+
+  .text-area {
+    height: 100px;
+    margin: 1.8rem 0;
+  }
+
+  .questionnaire-buttons {
+    width: 100%;
+    margin: 1.8rem 0 3.6rem;
+
+    button {
+      background-color: $mid-orange;
+      @include bx-shadow-two;
+      color: $white;
+      font-weight: 100;
+      width: 100%;
+      transition: 300ms;
+      cursor: pointer;
+      height: 60px;
+      outline: none;
+      border: none;
     }
 
-    .get-started-wrap {
-        border-top: 3px solid #ea7857;
-        width: 90%;
-        max-width: 1200px;
-        background-color: $white;
-        padding: 1.8rem;
-        margin: 1.8rem;
-        border-radius: $border;
-        @include bx-shadow-two;
-        @include center;
-        flex-direction: column;
-
-        p {
-            span {
-                font-weight: bold;
-            }
-        }
-
-        @media only screen and (max-width: $sz-s) {
-            margin: 0 1.8rem;
-        }
+    button:hover {
+      @include bx-shadow;
+      background-color: $dark-grey-blue;
     }
-
-    form {
-        width: 90%;
-        max-width: 1200px;
-
-        .name-company-wrap {
-            display: flex;
-
-            .q-one {
-                margin-right: 1.8rem;
-            }
-
-            .q-two {
-                margin-left: 1.8rem;
-            }
-
-            .company-details {
-                width: 50%;
-
-
-
-                input {
-                    width: 100%;
-                }
-
-            }
-
-
-        }
-    }
-
-    input {
-        margin: 1.8rem 0;
-    }
-
-    .text-area {
-        height: 100px;
-        margin: 1.8rem 0;
-    }
-
-    .questionnaire-buttons {
-        width: 100%;
-        margin: 1.8rem 0 3.6rem;
-
-        button {
-            background-color: $mid-orange;
-            @include bx-shadow-two;
-            color: $white;
-            font-weight: 100;
-            width: 100%;
-            transition: 300ms;
-            cursor: pointer;
-            height: 60px;
-            outline: none;
-            border: none;
-        }
-
-        button:hover {
-            @include bx-shadow;
-            background-color: $dark-grey-blue;
-        }
-    }
+  }
 }

@@ -205,7 +205,6 @@ module.exports = {
           `/404.html`,
           `/success`,
           `/offline-plugin-app-shell-fallback`,
-          /(\/)?hash-\S*/, // you can also pass valid RegExp to exclude internal tags for example
         ],
         query: `{
           site {
