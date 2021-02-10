@@ -4,6 +4,13 @@ import Layout from '../components/Layout'
 const questionaire = () => {
   return (
     <Layout>
+      <Seo
+        title="Questionnaire"
+        description=" Fill out the form below and get you web design project rolling. We
+            will be back in touch within 24 hours to discuss the
+            information you have provided and give you a free no obligation
+            personalised quote."
+      />
       <div className="questionnaire-form">
         <h1>Get Your Website Project Started</h1>
         <div className="get-started-wrap">
