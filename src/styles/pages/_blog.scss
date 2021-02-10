@@ -28,8 +28,55 @@
     }
   }
 
+  .get-ahead-wrap {
+    width: 100%;
+    @include center;
+  }
+
+  .get-ahead {
+    min-width: 500px;
+    width: 50%;
+    background-color: $white;
+    padding: 1.8rem;
+    margin: 3.6rem auto 0;
+    border-radius: $border;
+    @include bx-shadow-two;
+    @include center;
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+      margin: 0 3.6rem;
+
+      @media (max-width: 530px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      margin: 1.8rem 1.8rem 0;
+
+      @media (max-width: 530px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
+      min-width: 10px;
+      margin: 3.6rem;
+    }
+
+
+    @media (max-width: 530px) {
+      margin: 1.8rem;
+      margin-bottom: 0rem;
+    }
+  }
+
   ol {
-    margin: 3rem 0;
+    margin: 1.8rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,37 +85,58 @@
 
     li {
       .link {
-        width: 300px;
-        height: 300px;
-        @include center;
+        border-top: 2px solid $mid-orange;
+        width: 32.4rem;
+        height: 400px;
+        display: flex;
+        justify-content: flex-start;
         flex-direction: column;
-        margin: 2.5rem;
+        align-items: center;
+        margin: 1.8rem;
+        padding-top: 3.6rem;
         background-color: #fff;
         border-radius: $border;
         @include bx-shadow-two;
         transition: 200ms;
+        color: $dark-grey-blue;
+
+        .snippet {
+          padding-bottom: 1rem;
+          margin: 1.8rem;
+          color: inherit;
+        }
 
         p {
-          padding-bottom: 1rem;
-          border-bottom: 3px solid $mid-orange;
-
+          color: inherit;
         }
 
         .gatsby-image-wrapper {
-          width: 175px;
+          width: 215px;
+          @include bx-shadow-two;
+        }
+
+        .title-wrap-blog-posts {
+          @include center;
+          height: 7.2rem;
+
+          h2 {
+            max-width: 290px;
+            text-align: center;
+            font-size: 2rem;
+            color: inherit;
+          }
+
         }
       }
 
       .link:hover {
-        background-color: $light-blue;
+        background-color: $dark-grey-blue;
+        color: #fff;
       }
 
-      h2 {
-        max-width: 290px;
-        text-align: center;
-        font-size: 2rem;
-        margin: 2rem 0;
-      }
+
+
+
     }
   }
 }

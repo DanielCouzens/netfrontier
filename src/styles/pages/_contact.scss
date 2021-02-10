@@ -23,6 +23,46 @@
   }
 }
 
+.get-in-touch-wrap {
+  width: 100%;
+  @include center;
+}
+
+.get-in-touch {
+  min-width: 500px;
+  width: 50%;
+  background-color: $white;
+  padding: 1.8rem;
+  margin: 1.8rem auto;
+  border-radius: $border;
+  @include bx-shadow-two;
+  @include center;
+  flex-direction: column;
+
+  a {
+    color: $mid-blue;
+    transition: 200ms;
+  }
+
+  a:hover {
+    color: $mid-orange;
+  }
+
+  @media (max-width: 650px) {
+    width: 100%;
+    min-width: 10px;
+    margin: 3.6rem;
+  }
+
+
+  @media (max-width: 530px) {
+    margin: 1.8rem;
+    margin-bottom: 3.6rem;
+  }
+
+}
+
+
 .contact-us-details {
   display: flex;
   align-items: center;

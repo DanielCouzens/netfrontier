@@ -30,21 +30,28 @@
             margin-top: 1.8rem;
             max-width: 450px;
         }
-
-        ;
-
     }
 
     .opening-times {
         display: flex;
         margin: 1.8rem;
+        border-radius: $border;
+        @include bx-shadow-two;
 
-        .days {
+        .days,
+        .times {
+            width: 130px;
             margin: 0.9rem 1rem;
+            padding: 0.9rem;
+            background-color: $white;
+            @include bx-shadow-two;
+            border-radius: $border;
+            position: relative;
         }
 
+
         .times {
-            margin: 0.9rem 1rem;
+            margin-left: 0;
         }
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Logo from '../images/logo/square-logo.svg'
+import { Link } from 'gatsby'
 import Forms from '../components/FormikForm'
 import Title from '../components/TitleContact'
 import fb from '../images/icons/001-facebook-grey.svg'
@@ -16,6 +17,7 @@ const Contact = ({ values }) => (
       description="Contact Net Frontier today to find out how we can help you with website design and online marketing goals."
     />
     <Title name="Get in touch" description="We would love to help" />
+
     <div className="contact-logo-wrap">
       <img src={Logo} alt="net frontier logo" />
       <h2>NET FRONTIER</h2>
@@ -87,8 +89,23 @@ const Contact = ({ values }) => (
         </div>
       </div>
     </div>
+    <div className="get-in-touch-wrap">
+      <div className="get-in-touch">
+        <p>
+          Please contact us in the way that suits you best. If you would like to
+          give us more information so we can get your website design project
+          moving quicker then please{' '}
+          <Link to="/questionnaire">
+            {' '}
+            click here to go to our questionnaire page
+          </Link>
+          .
+        </p>
+      </div>
+    </div>
 
     <Forms />
+    <Open />
   </Layout>
 )
 
