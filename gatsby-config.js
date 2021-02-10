@@ -200,11 +200,11 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [
-          '/dev-404-page',
-          '/404',
-          '/404.html',
-          '/success',
-          '/offline-plugin-app-shell-fallback',
+          `/dev-404-page`,
+          `/404`,
+          `/404.html`,
+          `/success`,
+          `/offline-plugin-app-shell-fallback`,
         ],
         query: `{
           site {
@@ -212,23 +212,21 @@ module.exports = {
               siteUrl
             }
           }
-          allContentfulBlog {
-            edges {
-              node {
-                slug
-              }
+          allSitePage {
+            nodes {
+              path
+            }
             }
           }
         }`,
-        serialize: ({ site, allSitePage }) => {
-          return allSitePage.edges.map(edge => {
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes.map(node => {
             return {
-              url: site.siteMetadata.siteUrl + edge.node.slug,
-              changefreq: 'daily',
-              priority: 0.5,
+              url: `${site.siteMetadata.siteUrl}$node.path}`,
+              changefreq: `daily`,
+              priority: 0.7,
             }
-          })
-        },
+          }),
       },
     },
   ],
