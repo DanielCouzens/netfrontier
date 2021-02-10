@@ -206,7 +206,8 @@ module.exports = {
           `/success`,
           `/offline-plugin-app-shell-fallback`,
         ],
-        query: `{
+        query: `
+        {
           site {
             siteMetadata {
               siteUrl
@@ -216,13 +217,13 @@ module.exports = {
             nodes {
               path
             }
-            }
           }
+         
         }`,
         serialize: ({ site, allSitePage }) =>
           allSitePage.nodes.map(node => {
             return {
-              url: `${site.siteMetadata.siteUrl}$node.path}`,
+              url: `${site.siteMetadata.siteUrl}${node.path}`,
               changefreq: `daily`,
               priority: 0.7,
             }
