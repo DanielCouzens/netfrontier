@@ -44,7 +44,6 @@ module.exports = {
   },
 
   plugins: [
-    // `gatsby-plugin-preact`,
     {
       resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
       options: {
@@ -106,7 +105,6 @@ module.exports = {
         ],
       },
     },
-    // 'gatsby-plugin-preload-link-crossorigin',
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {

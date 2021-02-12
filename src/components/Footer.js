@@ -166,6 +166,13 @@ const Footer = () => {
         <span>&copy; {new Date().getFullYear()} Net Frontier</span>
         <div className="directory">
           <a
+            href="https://www.b2b-directory-uk.co.uk/web-design.html"
+            target="_blank"
+          >
+            Web Designers
+          </a>{' '}
+          - Directory of UK website designers.
+          <a
             rel="noopener"
             href="https://www.web-design-directory-uk.co.uk/bristol.htm"
             target="_blank"
