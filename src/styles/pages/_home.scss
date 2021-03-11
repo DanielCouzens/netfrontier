@@ -45,6 +45,7 @@
     width: 80%;
   }
 
+  h3,
   p {
     margin: $xs-size 0;
     width: 80%;
@@ -77,6 +78,7 @@
 
   a:last-child {
     margin-left: 3.6rem;
+
     @media (max-width: $sz-m-s) {
       margin-left: 1.8rem;
     }

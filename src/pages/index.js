@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import testimonialpic from '../images/testimonials/helen.jpg'
 import testimonialpictwo from '../images/testimonials/richard.jpg'
-import HeroOpt from '../components/HeroOpt'
+import Hero from '../components/Hero'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Cta from '../components/Cta'
@@ -59,21 +59,31 @@ function Index() {
     <Layout>
       <Seo title="Net Frontier" schemaMarkup={schema} />
 
-      <HeroOpt />
+      <Hero />
       <Free />
 
       <section className="welcome-wrap">
         <div className="welcome-row">
           <div className="welcome-text">
             <h2>Welcome to Net Frontier</h2>
+            <h3>The Bristol Web Design Company You Can Rely On</h3>
             <p>
-              We create fast, gorgeous, secure, user-friendly websites, designed
-              to be future proof and optimised for the real world.
+              We are a web design company that creates fast, gorgeous, secure,
+              user-friendly websites, designed to be future proof and optimised
+              for the real world.
             </p>
             <p>
-              We achieve this by keeping our finger on the pulse, adopting new
-              technologies that are proven in the field and usually totally out
-              of reach for smaller companies.
+              Every website that we create is SEO friendly and uses the latest
+              technologies to ensure built-in speed, security and
+              responsiveness. You can update your website yourself using our
+              chosen headless CMS platforms. We offer training to ensure you get
+              the most out of your new website.
+            </p>
+            <p>
+              At Net Frontier, we know that you might not have time to design a
+              website when you are busy running your own business. That's why we
+              offer a stress-free website design service that will take the load
+              off your shoulders and get your business online for you.
             </p>
             <p>
               Work with us to create a website design that reflects your brand

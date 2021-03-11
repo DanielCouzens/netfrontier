@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 // Icons
 import webDesign from '../images/service-icons/web-design.svg'
@@ -13,7 +14,7 @@ const Services = () => {
   return (
     <div className="services-section">
       <div className="services-row">
-        <div className="services-warp">
+        <Link className="services-warp" to="/website-design">
           <h2>Website Design</h2>
 
           <div className="services-icon">
@@ -25,8 +26,9 @@ const Services = () => {
             performance and SEO in mind meaning that you will have a website
             that competes with the best of them.
           </p>
-        </div>
-        <div className="services-warp">
+        </Link>
+
+        <Link className="services-warp" to="/website-development">
           <h2>Web Development</h2>
           <div className="services-icon">
             <img
@@ -41,7 +43,7 @@ const Services = () => {
             you with one of our maintenance and evolve packages. Get in touch to
             find out more.
           </p>
-        </div>
+        </Link>
         <div className="services-warp">
           <h2>Online Marketing</h2>
           <div className="services-icon">
@@ -59,7 +61,7 @@ const Services = () => {
         </div>
 
         <div className="services-warp">
-          <h2>Tech Support</h2>
+          <h2>Website Support</h2>
           <div className="services-icon">
             <img src={techSuppport} alt="Net Frontiers Tech Support Icon" />
           </div>

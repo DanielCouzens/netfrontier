@@ -67,6 +67,12 @@ const Seo = ({
                 {JSON.stringify(schemaMarkup)}
               </script>
             )}
+            {
+              <script
+                src="https://widget.taggbox.com/embed.min.js"
+                type="text/javascript"
+              ></script>
+            }
           </Helmet>
         </>
       )

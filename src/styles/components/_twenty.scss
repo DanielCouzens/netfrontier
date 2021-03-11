@@ -6,7 +6,7 @@
   height: 109px;
   position: fixed;
   background-color: $mid-orange;
-  color: #fff;
+  color: $white;
   clip-path: polygon(0 100%, 0 0, 100% 0);
 
   .twenty-text {
@@ -20,7 +20,7 @@
     }
 
     p {
-      color: #fff;
+      color: $white;
       font-size: 1.1rem;
       font-weight: 800;
     }

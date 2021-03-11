@@ -1,17 +1,22 @@
+.psuedo {
+  height: 72px;
+}
+
 .header-wrap {
-  height: 90px;
   position: fixed;
-  align-items: center;
+  z-index: 10000;
+  align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  z-index: 100000;
+  width: 100vw;
   background-color: $white;
   @include bx-shadow;
 
   .logo-container-wrap {
+    z-index: 2;
     margin-top: 5px;
     margin-left: 1.8rem;
+    margin-bottom: 1.2rem;
     display: flex;
 
     .logo {
@@ -124,36 +129,81 @@
     }
 
     .nav {
-      z-index: 1;
       display: flex;
       width: 100%;
+      z-index: 10;
+      padding-bottom: 10px;
 
       @media only screen and (max-width: $sz-m) {
         display: none;
       }
 
       ul {
+        position: relative;
         display: flex;
         align-items: center;
 
+
         li {
-          font-size: $s-size;
-          margin: 10px;
+          margin-top: 10px;
 
           a {
+            padding: 0 20px 10px;
             font-size: 1.6rem;
             color: $dark-grey-blue;
           }
+
+          a:last-child {
+            padding-right: 0;
+          }
         }
 
-        li:last-child {
-          margin-right: 0;
-        }
       }
-    }
 
-    @media only screen and (max-width: $sz-m) {
-      display: none;
+
     }
+  }
+
+  @media only screen and (max-width: $sz-m) {
+    height: 72px;
+  }
+}
+
+.drop-down {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: fixed;
+  right: 293px;
+  z-index: 1010;
+  top: -250px;
+  background: linear-gradient(98deg, $vdark-grey-blue, $dark-grey-blue);
+  transition: 200ms;
+  @include bx-shadow-two;
+  border-radius: 0 0 $border $border;
+
+  .drop-down-links {
+    margin: 0.9rem;
+    margin-bottom: 0;
+
+    a {
+      text-align: center;
+      color: $white;
+      transition: 200ms;
+      padding: 10px;
+      width: 195px;
+      display: block;
+      border: 1px solid #ffffff1a;
+
+    }
+  }
+
+  .drop-down-links:last-child {
+    margin-bottom: 0.9rem;
+  }
+
+  a:hover {
+    background-color: $white;
+    color: $dark-grey-blue;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Quick from '../components/Quick'
-import Squares from '../components/Squares'
+import Quick from './Quick'
+import Squares from './Squares'
 
 const HeroOpt = () => {
   return (

@@ -34,8 +34,8 @@ const ourProcess = () => {
           <p>
             We have a simple 6 step process from enquiry to the launching of
             your site. We believe in creating as much clarity from the get-go as
-            this ensures that we are both on the same page every step of the
-            way.
+            possible. This ensures that we are both on the same page every step
+            of the way.
           </p>
           <CTA name="Get In Touch" link="/contact" />
         </div>
@@ -47,12 +47,19 @@ const ourProcess = () => {
             </div>
             <div className="step-inner step-one">
               <h3>
-                Step <span>1</span> Enquire
+                <span>1</span> Enquire
               </h3>
               <p>
-                Get in touch and we can discuss your requirements and the
-                various ways we can meet them. We will then send you a
-                personalised quote. When you are happy we can move onto step 2.
+                Get in touch and we can have an informal chat about all the
+                things you would like to achieve with your business online. No
+                one knows your business better than you so we will spend the
+                time listening and asking the right questions to make sure we
+                understand your needs and requirements.
+              </p>
+              <p>
+                After our initial conversation we will put together our
+                suggestions for the best way to move forward and a quote. When
+                you are happy we can move onto step 2.
               </p>
             </div>
           </div>
@@ -62,7 +69,7 @@ const ourProcess = () => {
             </div>
             <div className="step-inner step-two">
               <h3>
-                Step <span>2</span> Sign-Up
+                <span>2</span> Sign-Up
               </h3>
               <p>
                 When you sign-up we will arrange a contract between us which is
@@ -86,7 +93,7 @@ const ourProcess = () => {
             </div>
             <div className="step-inner step-three">
               <h3>
-                Step <span>3</span> Design
+                <span>3</span> Design
               </h3>
               <p>
                 First we will put together a pallet of colours and fonts that
@@ -115,7 +122,7 @@ const ourProcess = () => {
             </div>
             <div className="step-inner step-four">
               <h3>
-                Step <span>4</span> Build
+                <span>4</span> Build
               </h3>
               <p>
                 Now we begin coding the website on a temporary domain. When it
@@ -136,7 +143,7 @@ const ourProcess = () => {
             </div>
             <div className="step-inner step-five">
               <h3>
-                Step <span>5</span> Launch
+                <span>5</span> Launch
               </h3>
               <p>
                 Your website has now been custom built and is ready to go live.
@@ -153,7 +160,7 @@ const ourProcess = () => {
             </div>
             <div className="step-inner step-six">
               <h3>
-                Step <span>6</span> Support
+                <span>6</span> Support
               </h3>
               <p>
                 We appreciate that it can be quite daunting to suddenly have
@@ -164,18 +171,17 @@ const ourProcess = () => {
               </p>
               <p>
                 If you need anything beyond this point we will always be happy
-                to help. We also provide online marketing and SEO solutions
-                please get in touch to find out more. Below is an outline of
-                what we have to offer.
+                to help. We also provide online marketing and SEO solutions so
+                please get in touch to find out more.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="evolve-title">
+        {/* <div className="evolve-title">
           <h3>Keep Growing Your Business By Marketing Your Website</h3>
-        </div>
-
+        </div> */}
+        {/* 
         <div className="evolve-steps">
           <div className="keep-evolving">
             <div className="evolve-inner evolve-one">
@@ -234,7 +240,7 @@ const ourProcess = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <BottomBanner />
     </Layout>

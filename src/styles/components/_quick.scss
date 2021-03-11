@@ -1,5 +1,5 @@
 .quick-section {
-  Z-INDEX: 10000000;
+  z-index: 15;
   width: 100%;
   max-width: 1100px;
   margin-top: 3.8rem;
@@ -10,15 +10,10 @@
 }
 
 .quick-row {
-  // margin-top: 1.8rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   flex-direction: row;
-
-  // @media only screen and (max-width: $sz-m-l) {
-  //   grid-template-columns: 1fr 1fr;
-  // }
 
   @media only screen and (max-width: $sz-m-s) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -51,63 +46,11 @@
     border-radius: $border;
     margin-top: 1.8rem;
   }
-
-  // .quick-two,
-  // .quick-five {
-  //   animation-iteration-count: 1;
-  //   animation: smiles 3s ease;
-  //   animation-delay: 1.5s;
-
-  //   @keyframes smiles {
-  //     0% {
-  //       transform: translateY(0px);
-  //     }
-
-  //     50% {
-  //       transform: translateY(70px);
-  //     }
-
-  //     100% {
-  //       transform: translateY(0px);
-  //     }
-  //   }
-
-  //   @media only screen and (max-width: $sz-m-s) {
-  //     animation: none;
-  //   }
-  // }
-
-  //   .quick-three,
-  //   .quick-four {
-  //     // transform: translateY(0px);
-
-  //     animation: smile 3s ease;
-  //     animation-iteration-count: 1;
-  //     animation-delay: 1.5s;
-
-  //     @keyframes smile {
-  //       0% {
-  //         transform: translateY(0px);
-  //       }
-
-  //       50% {
-  //         transform: translateY(110px);
-  //       }
-
-  //       100% {
-  //         transform: translateY(0px);
-  //       }
-  //     }
-
-  //     @media only screen and (max-width: $sz-m-s) {
-  //       animation: none;
-  //     }
-  //   }
 }
 
 .quick-icon {
   @include bx-shadow-two;
-  background-color: #fff;
+  background-color: $white;
   display: block;
   width: 80px;
   height: 80px;

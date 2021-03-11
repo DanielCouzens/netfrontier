@@ -15,7 +15,7 @@ export const query = graphql`
         json
       }
       thumbnail {
-        fluid(maxWidth: 300) {
+        fluid(maxWidth: 1200) {
           ...GatsbyContentfulFluid
         }
         fixed {
@@ -33,7 +33,7 @@ const Blog = props => {
       'embedded-asset-block': node => {
         const alt = node.data.target.fields.title['en-US']
         const url = node.data.target.fields.file['en-US'].url
-        return <img alt={alt} src={url} />
+        return <img className="image" alt={alt} src={url} />
       },
     },
   }

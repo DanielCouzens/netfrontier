@@ -24,20 +24,23 @@
 }
 
 .get-in-touch-wrap {
+
+
   width: 100%;
-  @include center;
+
 }
 
 .get-in-touch {
+  h3 {
+    margin-bottom: 0.9rem;
+  }
+
   min-width: 500px;
   width: 50%;
-  background-color: $white;
   padding: 1.8rem;
   margin: 1.8rem auto;
   border-radius: $border;
-  @include bx-shadow-two;
-  @include center;
-  flex-direction: column;
+  // @include bx-shadow-two;
 
   a {
     color: $mid-blue;

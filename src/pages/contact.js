@@ -91,6 +91,7 @@ const Contact = ({ values }) => (
     </div>
     <div className="get-in-touch-wrap">
       <div className="get-in-touch">
+        <h3>Contact Us</h3>
         <p>
           Please contact us in the way that suits you best. If you would like to
           give us more information so we can get your website design project

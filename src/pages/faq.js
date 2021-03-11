@@ -219,6 +219,8 @@ class Faq extends Component {
           schemaMarkup={schema}
           description="Have a look though our frequently asked questions about website design and development. Please feel to get in touch if there is something we have not answered."
         />
+        <div className="psuedo"></div>
+
         <div className="faq-wrap">
           <div className="faq-title">
             <h1>Frequently Asked Questions</h1>
@@ -361,7 +363,7 @@ class Faq extends Component {
               </div>
             </div>
 
-            <div className="faq-qa">
+            <div className="faq-qa" id="headless-cms">
               <div onClick={this.handleclick5} className="faq-question">
                 <h3>5 How long will it take to build a website?</h3>
                 <img

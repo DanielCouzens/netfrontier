@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   height: 80vh;
   width: 100vw;
-  min-height: 650px;
+  min-height: 750px;
 
   @media only screen and (max-width: $sz-s) {
     min-height: 600px;
@@ -62,7 +62,7 @@
   margin-top: $l-size;
   font-size: $l-size;
   font-weight: $bold;
-  color: #fff;
+  color: $white;
 
   @media only screen and (max-width: $sz-m-s) {
     font-size: $l-size;
@@ -87,7 +87,7 @@
 
 .call-to-action-white {
   @include button-one;
-  color: #fff;
+  color: $white;
   background-color: $mid-orange;
   border-radius: $border;
   transition: 300ms;

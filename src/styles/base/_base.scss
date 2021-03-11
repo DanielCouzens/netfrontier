@@ -42,6 +42,13 @@ p {
   font-size: $s-size;
 }
 
+i,
+b {
+  font-weight: 800;
+  font-size: $s-size;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 span {
   @media (max-width: $sz-m-s) {
     font-size: 1.4rem;
@@ -73,18 +80,12 @@ h4 {
   font-size: $s-size;
 }
 
-.psuedo {
-  height: 90px;
-}
-
 .layout {
   background-color: $light-blue;
   overflow-x: hidden;
   overflow-y: scroll;
-  // background-image: url("../images/icons/backboot.png");
-  // background-repeat: repeat;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }

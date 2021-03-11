@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
-  color: #fff;
+  color: $white;
   border-bottom: 1px solid #43464b1a;
 
   .free-wrap {
@@ -19,7 +19,7 @@
 
       .selected-plans {
         font-size: 1.2rem;
-        background-color: #fff;
+        background-color: $white;
         padding: 5px 10px;
         border-radius: $border;
         margin-top: 3px;
@@ -33,7 +33,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #fff;
+        color: $white;
 
         @media only screen and (max-width: $sz-m) {
           font-size: 2.5rem;
@@ -61,7 +61,7 @@
     }
 
     img {
-      background-color: #fff;
+      background-color: $white;
       border-radius: 100%;
       padding: 3px;
       width: 40px;

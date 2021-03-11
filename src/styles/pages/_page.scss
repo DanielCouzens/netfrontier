@@ -1,0 +1,35 @@
+.page-container {
+    @include center;
+
+    .page-wrap {
+        z-index: 10;
+        max-width: 1200px;
+        margin: 3rem;
+        background-color: $white;
+        padding: 3rem;
+        @include bx-shadow-two;
+        border-radius: $border;
+
+        .image {
+            float: right;
+            margin: 1.8rem;
+            width: 50%;
+            @include bx-shadow-two;
+            border-radius: $border;
+        }
+
+        .image:nth-of-type(even) {
+            float: left;
+            margin: 1.8rem;
+        }
+
+        h2 {
+            margin-top: 3rem;
+            margin: 0.9rem;
+        }
+
+        p {
+            margin: 0.9rem;
+        }
+    }
+}

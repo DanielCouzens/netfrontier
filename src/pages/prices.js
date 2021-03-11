@@ -19,7 +19,7 @@ const prices = () => {
       />
       <div className="prices-section-top">
         <div className="prices-welcome">
-          <h2>Our Web Design Prices</h2>
+          <h2>100% Satisfaction Guarantee</h2>
           <p>
             Our prices are not only competitive they come with a guarantee. We
             guarantee a website design that you will be delighted with and
@@ -139,10 +139,10 @@ const prices = () => {
 
             <ul>
               <li>
-                Free Hosting - <span>2yrs</span>
+                Free Hosting - <span>1yr</span>
               </li>
               <li>
-                Free SSL - <span>2yrs</span>
+                Free SSL - <span>1yr</span>
               </li>
               <li>Free CMS Training</li>
               <li>CMS</li>
@@ -168,10 +168,10 @@ const prices = () => {
 
             <ul>
               <li>
-                Free Hosting - <span>2yrs</span>
+                Free Hosting - <span>1yr</span>
               </li>
               <li>
-                Free SSL - <span>2yrs</span>
+                Free SSL - <span>1yr</span>
               </li>
               <li>Free CMS Training</li>
               <li>CMS</li>

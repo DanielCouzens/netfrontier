@@ -5,6 +5,7 @@ import testimonialpictwo from '../images/testimonials/richard.jpg'
 import Testimonials from '../components/Testimonials'
 import Cta from '../components/Cta'
 import BottomBanner from '../components/BottomBanner'
+import { Link } from 'gatsby'
 import Seo from '../components/Seo'
 
 const about = () => {
@@ -17,7 +18,10 @@ const about = () => {
               websites for clients looking for a blend of style, functionality
               and competitive advantage."
       />
-      <Title name="About Us" description="" />
+      <Title
+        name="About Us"
+        description="The web is constantly evolving and so do we"
+      />
       <section className="about-us-section">
         <div className="about-us-row">
           <div className="about-us-text about-top">
@@ -146,8 +150,18 @@ const about = () => {
               </p>
               <p>
                 A hand-coded website is still the best way to go, especially
-                when you combine this with the future of the web which is
-                headless CMS.
+                when you combine this with the future of the web which is a {''}
+                <Link
+                  to="/faq#headless-cms"
+                  target="_blank"
+                  activeStyle={{
+                    fontWeight: '800',
+                    color: '#ea7857',
+                  }}
+                >
+                  headless CMS
+                </Link>{' '}
+                and the jam stack.
               </p>
               <Cta name="See Prices" link="/prices" />
             </div>
@@ -164,7 +178,7 @@ const about = () => {
         <div className="about-content-wrap ">
           <div className="about-wrap about-reverse">
             <div className="about-text about">
-              <h2>Why Us?</h2>
+              <h2>Why Choose Us?</h2>
               <h3>3 reasons just for starters</h3>
               <h4
                 className="h4-green"
@@ -175,8 +189,17 @@ const about = () => {
                 <span>1</span>The Latest Website Technology
               </h4>
               <p>
-                We specialise in single-page applications and headless CMS's.
-                You will have access to the tools that 28% of the Fortune 500
+                We specialise in single-page applications and{' '}
+                <Link
+                  to="/faq#headless-cms"
+                  activeStyle={{
+                    fontWeight: '800',
+                    color: '#ea7857',
+                  }}
+                >
+                  headless CMS's
+                </Link>
+                . You will have access to the tools that 28% of the Fortune 500
                 companies use, allowing you to compete in your industry whilst
                 simultaneously providing the most compelling customer
                 experiences.
@@ -190,9 +213,12 @@ const about = () => {
                 <span>2</span>The Fastest Website Possible
               </h4>
               <p>
-                Speed matters: Our websites perform in the top 5 percentile of
+                Speed matters; our websites perform in the top 5 percentile of
                 all website on the planet, search engines favour websites that
-                load quickly.
+                load quickly. We will also send you independent reports from
+                Google and other respected companies such as Semrush to prove
+                it. So you are safe in the knowledge that you are not loosing
+                business due to having sluggish website.
               </p>
               <h4
                 className="h4-orange"
@@ -203,11 +229,14 @@ const about = () => {
                 <span>3</span>Fantastic Training
               </h4>
               <p>
-                Training: Dan Couzens has over twenty years experience in
-                teaching various subjects and understands that learning
-                something new can be quite a challenge. Therefore we will be
-                with you every step of the way until you are totally confident
-                with how your website works.
+                Dan Couzens has over twenty years experience in teaching various
+                subjects and understands that learning something new can be
+                quite a challenge. Therefore we will be with you every step of
+                the way until you are totally confident with how your website
+                works.
+              </p>
+              <p>
+                Even then we have a range of support packages to suit everyone.{' '}
               </p>
 
               <Cta name="Learn More" link="/our-process" />
